@@ -2,47 +2,47 @@
 
 abstract class PHPUnit_Framework_Assert {
   // Assertions
-  public static function assertArrayHasKey(
+  public function assertArrayHasKey(
     arraykey $key,
     array $array,
     string $message = '',
   ): void;
-  public static function assertArrayNotHasKey(
+  public function assertArrayNotHasKey(
     arraykey $key,
     array $array,
     string $message = '',
   ): void;
-  public static function assertArraySubset(
+  public function assertArraySubset(
     array $subset,
     array $array,
     bool $strict = false,
     string $message = '',
   ): void;
-  public static function assertAttributeContains(
+  public function assertAttributeContains(
     mixed $needle,
     string $name,
     mixed $object,
     string $message = '',
   ): void;
-  public static function assertAttributeContainsOnly(
+  public function assertAttributeContainsOnly(
     string $type,
     string $name,
     mixed $object,
     ?bool $isNativeType = null,
     string $message = '',
   ): void;
-  public static function assertAttributeCount(
+  public function assertAttributeCount(
     int $expected,
     string $name,
     mixed $object,
     string $message = '',
   ): void;
-  public static function assertAttributeEmpty(
+  public function assertAttributeEmpty(
     string $name,
     mixed $object,
     string $message = '',
   ): void;
-  public static function assertAttributeEquals(
+  public function assertAttributeEquals(
     mixed $expect,
     string $name,
     mixed $object,
@@ -52,67 +52,67 @@ abstract class PHPUnit_Framework_Assert {
     bool $canonicalize = false,
     bool $ignoreCase = false,
   ): void;
-  public static function assertAttributeGreaterThan(
+  public function assertAttributeGreaterThan(
     mixed $expected,
     string $name,
     mixed $object,
     string $message = '',
   ): void;
-  public static function assertAttributeGreaterThanOrEqual(
+  public function assertAttributeGreaterThanOrEqual(
     mixed $expected,
     string $name,
     mixed $object,
     string $message = '',
   ): void;
-  public static function assertAttributeInstanceOf<T>(
+  public function assertAttributeInstanceOf<T>(
     classname<T> $expected,
     string $name,
     mixed $object,
     string $msg = '',
   ): void;
-  public static function assertAttributeInternalType(
+  public function assertAttributeInternalType(
     string $expected,
     string $name,
     mixed $object,
     string $message = '',
   ): void;
-  public static function assertAttributeLessThan(
+  public function assertAttributeLessThan(
     mixed $expected,
     string $name,
     mixed $object,
     string $message = '',
   ): void;
-  public static function assertAttributeLessThanOrEqual(
+  public function assertAttributeLessThanOrEqual(
     mixed $expected,
     string $name,
     mixed $object,
     string $message = '',
   ): void;
-  public static function assertAttributeNotContains(
+  public function assertAttributeNotContains(
     mixed $needle,
     string $name,
     mixed $object,
     string $message = '',
   ): void;
-  public static function assertAttributeNotContainsOnly(
+  public function assertAttributeNotContainsOnly(
     string $type,
     string $name,
     mixed $object,
     ?bool $isNativeType = null,
     string $message = '',
   ): void;
-  public static function assertAttributeNotCount(
+  public function assertAttributeNotCount(
     int $expected,
     string $name,
     mixed $object,
     string $message = '',
   ): void;
-  public static function assertAttributeNotEmpty(
+  public function assertAttributeNotEmpty(
     string $name,
     mixed $object,
     string $message = '',
   ): void;
-  public static function assertAttributeNotEquals(
+  public function assertAttributeNotEquals(
     mixed $expect,
     string $name,
     mixed $object,
@@ -122,103 +122,103 @@ abstract class PHPUnit_Framework_Assert {
     bool $canonicalize = false,
     bool $ignoreCase = false,
   ): void;
-  public static function assertAttributeNotInstanceOf<T>(
+  public function assertAttributeNotInstanceOf<T>(
     classname<T> $expected,
     string $name,
     mixed $object,
     string $msg = '',
   ): void;
-  public static function assertAttributeNotInternalType(
+  public function assertAttributeNotInternalType(
     string $expected,
     string $name,
     mixed $object,
     string $message = '',
   ): void;
-  public static function assertAttributeNotSame(
+  public function assertAttributeNotSame(
     mixed $expect,
     string $name,
     mixed $object,
     string $msg = '',
   ): void;
-  public static function assertAttributeSame(
+  public function assertAttributeSame(
     mixed $expect,
     string $name,
     mixed $object,
     string $msg = '',
   ): void;
-  public static function assertClassHasAttribute(
+  public function assertClassHasAttribute(
     string $name,
     string $class,
     string $message = '',
   ): void;
-  public static function assertClassHasStaticAttribute(
+  public function assertClassHasStaticAttribute(
     string $name,
     string $class,
     string $message = '',
   ): void;
-  public static function assertClassNotHasAttribute(
+  public function assertClassNotHasAttribute(
     string $name,
     string $class,
     string $message = '',
   ): void;
-  public static function assertClassNotHasStaticAttribute(
+  public function assertClassNotHasStaticAttribute(
     string $name,
     string $class,
     string $message = '',
   ): void;
-  public static function assertContains(
+  public function assertContains(
     mixed $needle,
     mixed $array,
     string $msg = '',
   ): void;
-  public static function assertContainsOnly(
+  public function assertContainsOnly(
     string $type,
     mixed $array,
     ?bool $isNativeType = null,
     string $message = '',
   ): void;
-  public static function assertContainsOnlyInstancesOf<T>(
+  public function assertContainsOnlyInstancesOf<T>(
     classname<T> $class,
     mixed $array,
     string $message = '',
   ): void;
-  public static function assertCount(
+  public function assertCount(
     int $expected,
     mixed $haystack,
     string $message = '',
   ): void;
-  public static function assertDirectoryExists(
+  public function assertDirectoryExists(
     string $directory,
     string $message = '',
   ): void;
-  public static function assertDirectoryIsReadable(
+  public function assertDirectoryIsReadable(
     string $directory,
     string $message = '',
   ): void;
-  public static function assertDirectoryIsWritable(
+  public function assertDirectoryIsWritable(
     string $directory,
     string $message = '',
   ): void;
-  public static function assertDirectoryNotExists(
+  public function assertDirectoryNotExists(
     string $directory,
     string $message = '',
   ): void;
-  public static function assertDirectoryNotIsReadable(
+  public function assertDirectoryNotIsReadable(
     string $directory,
     string $message = '',
   ): void;
-  public static function assertDirectoryNotIsWritable(
+  public function assertDirectoryNotIsWritable(
     string $directory,
     string $message = '',
   ): void;
-  public static function assertEmpty(mixed $actual, string $message = ''): void;
-  public static function assertEqualXMLStructure(
+  public function assertEmpty(mixed $actual, string $message = ''): void;
+  public function assertEqualXMLStructure(
     /*DOMElement*/ $expected,
     /*DOMElement*/ $actual,
     bool $check = false,
     string $message = '',
   ): void;
-  public static function assertEquals(
+  public function assertEquals(
     mixed $expect,
     mixed $actual,
     string $msg = '',
@@ -227,131 +227,131 @@ abstract class PHPUnit_Framework_Assert {
     bool $canonicalize = false,
     bool $ignoreCase = false,
   ): void;
-  public static function assertFalse(mixed $condition, string $message = ''): void;
-  public static function assertFileEquals(
+  public function assertFalse(mixed $condition, string $message = ''): void;
+  public function assertFileEquals(
     string $expected,
     string $actual,
     string $message = '',
   ): void;
-  public static function assertFileExists(
+  public function assertFileExists(
     string $filename,
     string $message = '',
   ): void;
-  public static function assertFileIsReadable(
+  public function assertFileIsReadable(
     string $file,
     string $message = '',
   ): void;
-  public static function assertFileIsWritable(
+  public function assertFileIsWritable(
     string $file,
     string $message = '',
   ): void;
-  public static function assertFileNotEquals(
+  public function assertFileNotEquals(
     string $expected,
     string $actual,
     string $message = '',
   ): void;
-  public static function assertFileNotExists(
+  public function assertFileNotExists(
     string $filename,
     string $message = '',
   ): void;
-  public static function assertFileNotIsReadable(
+  public function assertFileNotIsReadable(
     string $file,
     string $message = '',
   ): void;
-  public static function assertFileNotIsWritable(
+  public function assertFileNotIsWritable(
     string $file,
     string $message = '',
   ): void;
-  public static function assertFinite(mixed $action, string $message = ''): void;
-  public static function assertGreaterThan(
+  public function assertFinite(mixed $action, string $message = ''): void;
+  public function assertGreaterThan(
     mixed $expected,
     mixed $actual,
     string $message = '',
   ): void;
-  public static function assertGreaterThanOrEqual(
+  public function assertGreaterThanOrEqual(
     mixed $expected,
     mixed $actual,
     string $message = '',
   ): void;
-  public static function assertInfinite(mixed $action, string $message = ''): void;
-  public static function assertInstanceOf<T>(
+  public function assertInfinite(mixed $action, string $message = ''): void;
+  public function assertInstanceOf<T>(
     classname<T> $expected,
     mixed $actual,
     string $msg = '',
   ): void;
-  public static function assertInternalType(
+  public function assertInternalType(
     string $expected,
     mixed $actual,
     string $message = '',
   ): void;
-  public static function assertIsReadable(
+  public function assertIsReadable(
     string $filename,
     string $message = '',
   ): void;
-  public static function assertIsWritable(
+  public function assertIsWritable(
     string $filename,
     string $message = '',
   ): void;
-  public static function assertJson(string $actual, string $message = ''): void;
-  public static function assertJsonFileEqualsJsonFile(
+  public function assertJson(string $actual, string $message = ''): void;
+  public function assertJsonFileEqualsJsonFile(
     string $expected,
     string $actual,
     string $message = '',
   ): void;
-  public static function assertJsonFileNotEqualsJsonFile(
+  public function assertJsonFileNotEqualsJsonFile(
     string $expected,
     string $actual,
     string $message = '',
   ): void;
-  public static function assertJsonStringEqualsJsonFile(
+  public function assertJsonStringEqualsJsonFile(
     string $expected,
     string $actual,
     string $message = '',
   ): void;
-  public static function assertJsonStringEqualsJsonString(
+  public function assertJsonStringEqualsJsonString(
     string $exepcted,
     string $actual,
     string $message = '',
   ): void;
-  public static function assertJsonStringNotEqualsJsonFile(
+  public function assertJsonStringNotEqualsJsonFile(
     string $expected,
     string $actual,
     string $message = '',
   ): void;
-  public static function assertJsonStringNotEqualsJsonString(
+  public function assertJsonStringNotEqualsJsonString(
     string $exepcted,
     string $actual,
     string $message = '',
   ): void;
-  public static function assertLessThan(
+  public function assertLessThan(
     mixed $expected,
     mixed $actual,
     string $message = '',
   ): void;
-  public static function assertLessThanOrEqual(
+  public function assertLessThanOrEqual(
     mixed $expected,
     mixed $actual,
     string $message = '',
   ): void;
-  public static function assertNan(mixed $action, string $message = ''): void;
-  public static function assertNotContains(
+  public function assertNan(mixed $action, string $message = ''): void;
+  public function assertNotContains(
     mixed $needle,
     mixed $array,
     string $msg = '',
   ): void;
-  public static function assertNotContainsOnly(
+  public function assertNotContainsOnly(
     string $type,
     mixed $array,
     ?bool $isNativeType = null,
     string $message = '',
   ): void;
-  public static function assertNotCount(
+  public function assertNotCount(
     int $expected,
     mixed $haystack,
     string $message = '',
   ): void;
-  public static function assertNotEmpty(mixed $actual, string $message = ''): void;
-  public static function assertNotEquals(
+  public function assertNotEmpty(mixed $actual, string $message = ''): void;
+  public function assertNotEquals(
     mixed $expect,
     mixed $actual,
     string $msg = '',
@@ -360,176 +360,176 @@ abstract class PHPUnit_Framework_Assert {
     bool $canonicalize = false,
     bool $ignoreCase = false,
   ): void;
-  public static function assertNotFalse(
+  public function assertNotFalse(
     mixed $condition,
     string $message = '',
   ): void;
-  public static function assertNotInstanceOf<T>(
+  public function assertNotInstanceOf<T>(
     classname<T> $expected,
     mixed $actual,
     string $msg = '',
   ): void;
-  public static function assertNotInternalType(
+  public function assertNotInternalType(
     string $expected,
     mixed $actual,
     string $message = '',
   ): void;
-  public static function assertNotIsReadable(
+  public function assertNotIsReadable(
     string $filename,
     string $message = '',
   ): void;
-  public static function assertNotIsWritable(
+  public function assertNotIsWritable(
     string $filename,
     string $message = '',
   ): void;
-  public static function assertNotNull(mixed $actual, string $msg = ''): void;
-  public static function assertNotRegExp(
+  public function assertNotNull(mixed $actual, string $msg = ''): void;
+  public function assertNotRegExp(
     string $pattern,
     string $string,
     string $message = '',
   ): void;
-  public static function assertNotSame(
+  public function assertNotSame(
     mixed $expect,
     mixed $actual,
     string $msg = '',
   ): void;
-  public static function assertNotSameSize(
+  public function assertNotSameSize(
     array $expected,
     array $actual,
     string $message = '',
   ): void;
-  public static function assertNotTrue(
+  public function assertNotTrue(
     mixed $conditions,
     string $message = '',
   ): void;
-  public static function assertNull(mixed $actual, string $msg = ''): void;
-  public static function assertObjectHasAttribute(
+  public function assertNull(mixed $actual, string $msg = ''): void;
+  public function assertObjectHasAttribute(
     string $name,
     mixed $object,
     string $message = '',
   ): void;
-  public static function assertObjectNotHasAttribute(
+  public function assertObjectNotHasAttribute(
     string $name,
     mixed $object,
     string $message = '',
   ): void;
-  public static function assertRegExp(
+  public function assertRegExp(
     string $pattern,
     string $string,
     string $message = '',
   ): void;
-  public static function assertSame(
+  public function assertSame(
     mixed $expect,
     mixed $actual,
     string $msg = '',
   ): void;
-  public static function assertSameSize(
+  public function assertSameSize(
     array $expected,
     array $actual,
     string $message = '',
   ): void;
-  public static function assertStringEndsNotWith(
+  public function assertStringEndsNotWith(
     string $suffix,
     string $string,
     string $message = '',
   ): void;
-  public static function assertStringEndsWith(
+  public function assertStringEndsWith(
     string $suffix,
     string $string,
     string $message = '',
   ): void;
-  public static function assertStringEqualsFile(
+  public function assertStringEqualsFile(
     string $expected,
     string $catual,
     string $message = '',
   ): void;
-  public static function assertStringMatchesFormat(
+  public function assertStringMatchesFormat(
     string $format,
     string $string,
     string $message = '',
   ): void;
-  public static function assertStringMatchesFormatFile(
+  public function assertStringMatchesFormatFile(
     string $format,
     string $string,
     string $message = '',
   ): void;
-  public static function assertStringNotEqualsFile(
+  public function assertStringNotEqualsFile(
     string $expected,
     string $catual,
     string $message = '',
   ): void;
-  public static function assertStringNotMatchesFormat(
+  public function assertStringNotMatchesFormat(
     string $format,
     string $string,
     string $message = '',
   ): void;
-  public static function assertStringNotMatchesFormatFile(
+  public function assertStringNotMatchesFormatFile(
     string $format,
     string $string,
     string $message = '',
   ): void;
-  public static function assertStringStartsNotWith(
+  public function assertStringStartsNotWith(
     string $prefix,
     string $string,
     string $message = '',
   ): void;
-  public static function assertStringStartsWith(
+  public function assertStringStartsWith(
     string $prefix,
     string $string,
     string $message = '',
   ): void;
-  public static function assertThat<T>(
+  public function assertThat<T>(
     mixed $value,
     PHPUnit_Framework_Constraint<T> $constraint,
     string $message = '',
   ): void;
-  public static function assertTrue(mixed $conditions, string $message = ''): void;
-  public static function assertXmlFileEqualsXmlFile(
+  public function assertTrue(mixed $conditions, string $message = ''): void;
+  public function assertXmlFileEqualsXmlFile(
     string $expected,
     string $actual,
     string $message = '',
   ): void;
-  public static function assertXmlFileNotEqualsXmlFile(
+  public function assertXmlFileNotEqualsXmlFile(
     string $expected,
     string $actual,
     string $message = '',
   ): void;
-  public static function assertXmlStringEqualsXmlFile(
+  public function assertXmlStringEqualsXmlFile(
     string $expected,
     string $actual,
     string $message = '',
   ): void;
-  public static function assertXmlStringEqualsXmlString(
+  public function assertXmlStringEqualsXmlString(
     string $expected,
     string $actual,
     string $message = '',
   ): void;
-  public static function assertXmlStringNotEqualsXmlFile(
+  public function assertXmlStringNotEqualsXmlFile(
     string $expected,
     string $actual,
     string $message = '',
   ): void;
-  public static function assertXmlStringNotEqualsXmlString(
+  public function assertXmlStringNotEqualsXmlString(
     string $expected,
     string $actual,
     string $message = '',
   ): void;
 
   // Test control
-  public static function fail(string $msg = ''): noreturn;
-  public static function markTestIncomplete(string $message = ''): noreturn;
-  public static function markTestSkipped(string $message = ''): noreturn;
+  public function fail(string $msg = ''): noreturn;
+  public function markTestIncomplete(string $message = ''): noreturn;
+  public function markTestSkipped(string $message = ''): noreturn;
 
   // Constraints
-  public static function anything(): PHPUnit_Framework_Constraint_IsAnything;
-  public static function arrayHasKey(
+  public function anything(): PHPUnit_Framework_Constraint_IsAnything;
+  public function arrayHasKey(
     arraykey $key,
   ): PHPUnit_Framework_Constraint_ArrayHasKey;
-  public static function attribute<T>(
+  public function attribute<T>(
     PHPUnit_Framework_Constraint<T> $constraint,
     string $attributeName,
   ): PHPUnit_Framework_Constraint_Attribute<T>;
-  public static function attributeEqualTo<T>(
+  public function attributeEqualTo<T>(
     string $attributeName,
     mixed $value,
     float $delta = 0.0,
@@ -537,95 +537,95 @@ abstract class PHPUnit_Framework_Assert {
     bool $canonicalize = false,
     bool $ignoreCase = false,
   ): PHPUnit_Framework_Constraint_Attribute<T>;
-  public static function callback<T>(
+  public function callback<T>(
     (function(T): bool) $callback,
   ): PHPUnit_Framework_Constraint_Callback<T>;
-  public static function classHasAttribute<T>(
+  public function classHasAttribute<T>(
     string $attributeName,
   ): PHPUnit_Framework_Constraint_ClassHasAttribute<T>;
-  public static function classHasStaticAttribute<T>(
+  public function classHasStaticAttribute<T>(
     string $attributeName,
   ): PHPUnit_Framework_Constraint_ClassHasStaticAttribute<T>;
-  public static function contains<T>(
+  public function contains<T>(
     mixed $value,
     bool $checkForObjectIdentity = true,
     bool $checkForNonObjectIdentity = false,
   ): PHPUnit_Framework_Constraint_TraversableContains<T>;
-  public static function containsOnly<T>(
+  public function containsOnly<T>(
     string $type,
   ): PHPUnit_Framework_Constraint_TraversableContainsOnly<T>;
-  public static function containsOnlyInstancesOf<T>(
+  public function containsOnlyInstancesOf<T>(
     classname<T> $className,
   ): PHPUnit_Framework_Constraint_TraversableContainsOnly<classname<T>>;
-  public static function countOf<T>(
+  public function countOf<T>(
     int $count,
   ): PHPUnit_Framework_Constraint_Count<T>;
-  public static function directoryExists(
+  public function directoryExists(
   ): PHPUnit_Framework_Constraint_DirectoryExists;
-  public static function equalTo(
+  public function equalTo(
     mixed $value,
     float $delta = 0.0,
     int $maxDepth = 10,
     bool $canonicalize = false,
     bool $ignoreCase = false,
   ): PHPUnit_Framework_Constraint_IsEqual;
-  public static function fileExists(): PHPUnit_Framework_Constraint_FileExists;
-  public static function greaterThan(
+  public function fileExists(): PHPUnit_Framework_Constraint_FileExists;
+  public function greaterThan(
     $value,
   ): PHPUnit_Framework_Constraint_GreaterThan;
-  public static function greaterThanOrEqual(
+  public function greaterThanOrEqual(
     $value,
   ): PHPUnit_Framework_Constraint_Or<num>;
-  public static function identicalTo(
+  public function identicalTo(
     $value,
   ): PHPUnit_Framework_Constraint_IsIdentical;
-  public static function isEmpty(): PHPUnit_Framework_Constraint_IsEmpty;
-  public static function isFalse(): PHPUnit_Framework_Constraint_IsFalse;
-  public static function isFinite(): PHPUnit_Framework_Constraint_IsFinite;
-  public static function isInfinite(): PHPUnit_Framework_Constraint_IsInfinite;
-  public static function isInstanceOf<T>(
+  public function isEmpty(): PHPUnit_Framework_Constraint_IsEmpty;
+  public function isFalse(): PHPUnit_Framework_Constraint_IsFalse;
+  public function isFinite(): PHPUnit_Framework_Constraint_IsFinite;
+  public function isInfinite(): PHPUnit_Framework_Constraint_IsInfinite;
+  public function isInstanceOf<T>(
     classname<T> $className,
   ): PHPUnit_Framework_Constraint_IsInstanceOf<T>;
-  public static function isJson(): PHPUnit_Framework_Constraint_IsJson;
-  public static function isNan(): PHPUnit_Framework_Constraint_IsNan;
-  public static function isNull(): PHPUnit_Framework_Constraint_IsNull;
-  public static function isReadable(): PHPUnit_Framework_Constraint_IsReadable;
-  public static function isTrue(): PHPUnit_Framework_Constraint_IsTrue;
-  public static function isType(string $type): PHPUnit_Framework_Constraint_IsType;
-  public static function isWritable(): PHPUnit_Framework_Constraint_IsWritable;
-  public static function lessThan($value): PHPUnit_Framework_Constraint_LessThan;
-  public static function lessThanOrEqual(
+  public function isJson(): PHPUnit_Framework_Constraint_IsJson;
+  public function isNan(): PHPUnit_Framework_Constraint_IsNan;
+  public function isNull(): PHPUnit_Framework_Constraint_IsNull;
+  public function isReadable(): PHPUnit_Framework_Constraint_IsReadable;
+  public function isTrue(): PHPUnit_Framework_Constraint_IsTrue;
+  public function isType(string $type): PHPUnit_Framework_Constraint_IsType;
+  public function isWritable(): PHPUnit_Framework_Constraint_IsWritable;
+  public function lessThan($value): PHPUnit_Framework_Constraint_LessThan;
+  public function lessThanOrEqual(
     $value,
   ): PHPUnit_Framework_Constraint_Or<num>;
-  public static function logicalAnd<T>(
+  public function logicalAnd<T>(
     PHPUnit_Framework_Constraint<T> ...$constraints
   ): PHPUnit_Framework_Constraint_And<T>;
-  public static function logicalNot<T>(
+  public function logicalNot<T>(
     PHPUnit_Framework_Constraint<T> $constraint,
   ): PHPUnit_Framework_Constraint_Not<T>;
-  public static function logicalOr<T>(
+  public function logicalOr<T>(
     PHPUnit_Framework_Constraint<T> ...$constraints
   ): PHPUnit_Framework_Constraint_Or<T>;
-  public static function logicalXor<T>(
+  public function logicalXor<T>(
     PHPUnit_Framework_Constraint<T> ...$constraints
   ): PHPUnit_Framework_Constraint_Xor<T>;
-  public static function matches(
+  public function matches(
     string $string,
   ): PHPUnit_Framework_Constraint_StringMatches;
-  public static function matchesRegularExpression(
+  public function matchesRegularExpression(
     string $pattern,
   ): PHPUnit_Framework_Constraint_PCREMatch;
-  public static function objectHasAttribute<T>(
+  public function objectHasAttribute<T>(
     string $attributeName,
   ): PHPUnit_Framework_Constraint_ObjectHasAttribute<T>;
-  public static function stringContains(
+  public function stringContains(
     string $string,
     bool $case = true,
   ): PHPUnit_Framework_Constraint_StringContains;
-  public static function stringEndsWith(
+  public function stringEndsWith(
     string $suffix,
   ): PHPUnit_Framework_Constraint_StringEndsWith;
-  public static function stringStartsWith(
+  public function stringStartsWith(
     string $prefix,
   ): PHPUnit_Framework_Constraint_StringStartsWith;
 
